@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/GP style.css">
-<script src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/ Group project app.js"</script></script>
+    <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
+<script src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/ Group project app.js"></script>
 
     <title>Women in Tech</title>
   </head>
@@ -37,7 +38,7 @@
 
 
   <!-- page content-->
-  <div class="wt-main" style="margin-left:100px margin-right:100px;">
+  <div class="wt-main" style="margin-left:100px margin-right,100px;">
 
     <!--push down content on small screens-->
     <div class="wt-hide-large" style="margin-top:83px;"></div>
@@ -50,15 +51,17 @@
 
   <div class = "row">
     <div class="column">
-      <img src = "/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/Ada_Lovelace_portrait.jpg" style="width:100%;"
-      onclick="onClick(this)" alt="Ada Lovelace">
-      <img src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/Edith Clarke.jpg" alt="Edith Clarke">
-      <img src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/Grace Hopper.jpeg" style="width:100%;" onclick="onClick(this)" alt="Grace Hopper">
+      <div class ="container">
+      <img src = "/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/Ada_Lovelace_portrait.jpg" class="image" style="width:100%;"
+      onclick="onClick(this)" alt="Ada Lovelace"> <div class="overlay"> </div></div>
+      <img src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/Edith Clarke.jpg" class="image2"style="width:100%" onclick="onClick(this)"alt="Edith Clarke"><div class="overlay2">
+        </div>
+     
+       <img src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/Grace Hopper.jpeg" style="width:100%;" onclick="onClick(this)" alt="Grace Hopper">
        </div>
 
        <div class="column">
-         <img src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/katherine johnson.jpeg
-         " style="width:100%" onclick="onClick(this)" alt="Creola Katherine Johnson">
+         <img src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/katherine johnson.jpeg" style="width:100%" onclick="onClick(this)" alt="Creola Katherine Johnson">
          <img src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/margaret_hamilton5.jpg " style="width:100%;" onclick="onClick(this)" alt="Margaret Hamilton">
          <img src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/Meg-Whitman 5.jpg" style="width:100%;" onclick="onClick(this)" alt="Meg Whitman">
        </div>
@@ -69,6 +72,8 @@
           <img src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/Kike Oniwinde.jpeg" style="width:100%;" onclick="onClick(this)" alt="Kike Oniwinde">
        </div>
        </div>
+      </div>
+  </div>
 </section>
 
 <div class="push"></div>
@@ -78,15 +83,15 @@
     <p class="CodeFirst"> Code First Girls <br> Group Project </p>
     <h4>Leave a Comment</h4>
 <div class="contact-title"style="max-width:none;">
-  <form action="action_page.php" target="_blank" name="myForm" onsubmit="alert (Message sent!);" method="post">
+  <form action="action_page.php" target="_blank" name="myForm" onsubmit="alert",(Message sent!); method="post">
     <label for="name"> Name </label>
     <input type="text" id="name" name="yourname" placeholder="Your name..">
 
     <label for="subject"> Comment</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px">
       </textarea>
-      <input type="submit" value="Submit">
-
+      <button onclick="myControl()"> Submit </button>
+    
 </form>
 <style>
     p.c{

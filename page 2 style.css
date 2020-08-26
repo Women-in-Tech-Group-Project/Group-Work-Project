@@ -1,0 +1,190 @@
+h3 {
+    font-family : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight : 300;
+    font-size: 25pt;
+    color : black;
+    display: inline-block;
+    padding: 20px;
+ }
+ 
+ .openbtn{
+   padding: 20px;
+  
+ }
+ 
+ /* The sidepanel menu */
+ .sidepanel {
+   height: 250px; /* Specify a height */
+   width: 0; /* 0 width - change this with JavaScript */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Stay on top */
+   top: 0;
+   left: 0;
+   background-color:#ff9999; /* Black*/
+   overflow-x: hidden; /* Disable horizontal scroll */
+   padding-top: 60px; /* Place content 60px from the top */
+   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+ }
+ 
+ /* The sidepanel links */
+ .sidepanel a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-size: 25px;
+   color: black;
+   display: block;
+   transition: 0.3s;
+ }
+ 
+ /* When you mouse over the navigation links, change their color */
+ .sidepanel a:hover {
+   color: #f1f1f1;
+ }
+ 
+ /* Position and style the close button (top right corner) */
+ .sidepanel .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px;
+   margin-left: 50px;
+ }
+ 
+ /* Style the button that is used to open the sidepanel */
+ .openbtn {
+   font-size: 20px;
+   cursor: pointer;
+   background-color:white;
+   color:black;
+   padding: 10px 15px;
+   border: none;
+   float: center;
+ }
+ 
+ .openbtn:hover {
+   background-color: #444;
+ }
+ 
+ 
+ body {
+   background-color : white;
+   padding: 0px;
+ }
+ .photoclickcontent {
+ padding : 10px,10px,10px,10px;
+ 
+ }
+ /*navbar*/
+ .container {
+   display: inline-block;
+   cursor: pointer;
+   float: left;
+   padding: 20px;
+ }
+ 
+ .bar1, .bar2, .bar3 {
+   width: 35px;
+   height: 5px;
+   background-color: #333;
+   margin: 6px 0;
+   transition: 0.4s;
+ }
+ 
+ /* Rotate first bar */
+ .change .bar1 {
+   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+   transform: rotate(-45deg) translate(-9px, 6px) ;
+ }
+ 
+ /* Fade out the second bar */
+ .change .bar2 {
+   opacity: 0;
+ }
+ 
+ /* Rotate last bar */
+ .change .bar3 {
+   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+   transform: rotate(45deg) translate(-8px, -8px) ;
+ }
+ 
+ 
+
+ /*phone version*/
+ @media only screen and (min-width: 320px) {
+   .column {
+     flex: 100px;
+     max-width: 100% ;
+   }
+ }
+ 
+ /*tablet version*/
+ @media only screen and (min-width: 768px) {
+   flex : 100px ;
+   max-width:100% ;
+ }
+ 
+ /*destop version*/
+ @media only screen and (min-width 980px) {
+   flex : 100px;
+   max-width: 33.33% ;
+ }
+h1 {
+  padding: 100px;
+  text-align: center;
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+   .footer {
+   position:bottom,fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   font-family : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 200;
+   clear: both;
+   margin: 0px;
+ }
+ input[type=text], select, textarea{
+   width: 100%;
+   padding:12px;
+   border: 1px solid black;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+ }
+   input[type=submit] {
+     background-color: #FF1493
+     color: white;
+     padding:12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ 
+   }
+   input [type=submit]:hover {
+     background-color: #660036;
+   }
+   .contact-title {
+     border-radius: 5px;
+     padding: 20px;
+   }
+ }
+ .button{
+   padding: 5px, 5px,5px,5px;
+ }
+ @media only screen and (min-width: 320px){
+   max-width: 100%;
+   }
+ @media only screen and (min-width: 768px) { max-width:100%
+ 
+   }
+ @media only screen and (mid-width:980px)  {
+   max-width:100%;
+ }
+ }

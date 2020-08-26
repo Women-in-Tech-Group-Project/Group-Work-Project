@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+​
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/page 2 style.css">
+​<script src="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/ Group project app.js"></script>
+    <title>Women in Tech</title>
+  </head>
+  <div class="wrapper">
+  <body class="photoclickcontent" style="max-width:none;">
+​
+   <!-- drop menu -->
+    <nav class="wt-sidebar wt-bar-block w3-white wt-animate-left wt-text-grey wt-collapse wt-top wt-center" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    
+  <h3 class="wt-padding-64 wt-center"><b>WOMEN<br>IN<br> TECH</b></h3>
+  </nav>
+  
+​
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/p3.html">About</a>
+    <a href="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/GP index.html">Homepage</a>
+​
+  </div>
+  
+  <button class="openbtn" onclick="openNav()"><nav class="Dropdownmenu" id=dropdown>
+    <div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div> </button>
+  
+  </nav>
+   
+​
+​
+  <!-- page content-->
+  <div class="wt-main" style="margin-left:100px margin-right,100px;">
+​
+    <!--push down content on small screens-->
+    <div class="wt-hide-large" style="margin-top:83px;"></div>
+​
+​<div class="wrapper">
+  <!--Slideshow-->
+  <div class="flex-container">
+    <section id="slideshow">
+      <style>
+        * {
+          box-sizing: border-box
+        }
+        body,html {
+          font-family: Verdana, sans-serif;
+          margin: 0;
+          height: 100%;
+        }
+        .mySlides {
+          display: none
+        }
+        img {
+          vertical-align: middle;
+        }
+        .slideshow-container {
+        max-width: 500px;
+        max-height: 500px;
+        position: relative;
+        margin: auto;
+        }
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        /* Positioning the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        /* When hovering, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Caption text formatting */
+        .text {
+          color: #ffffffc0;
+          font-size: 15px;
+          font-family : “HelveticaNeue-Light”, “Helvetica Neue Light”, “Helvetica Neue”, Helvetica, Arial, “Lucida Grande”, sans-serif;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        /* Number text (i.e. 1/5) */
+        .numbertext {
+          color: #ffffff;
+          font-size: 12px;
+          font-family : “HelveticaNeue-Light”, “Helvetica Neue Light”, “Helvetica Neue”, Helvetica, Arial, “Lucida Grande”, sans-serif;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        /* The dots at the bottom to scroll through */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #999999;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        .active,
+        .dot:hover {
+          background-color: #111111;
+        }
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+          from {
+            opacity: .4
+          }
+          to {
+            opacity: 1
+          }
+        }
+        @keyframes fade {
+          from {
+            opacity: .4
+          }
+          to {
+            opacity: 1
+          }
+        }
+        /* Decreasing screen size on smaller screens */
+        @media only screen and (max-width: 300px) {
+          .prev,
+          .next,
+          .text {
+            font-size: 11px
+          }
+        }
+      </style>
+  
+    <!-- Slideshow container with images -->
+    <body>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.wired.com%2Fwp-content%2Fuploads%2F2015%2F10%2F001_3-featured.jpg&f=1&nofb=1" style= "height:250px; width:500px">
+          <div class="text">Margaret Hamilton</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcloud.fullstackacademy.com%2Fmitchell-baker.jpg%3Fmtime%3D20191007111319&f=1&nofb=1" style= "height: 250px; width:500px">
+          <div class="text">Mitchell Baker</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="https://guardian.ng/wp-content/uploads/2018/09/b99dec_2905d6dfdc7148589dbb7faf1f2914f0_mv2.jpg" style= "height: 250px; width:500px">
+          <div class="text">Kike Oniwinde</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="https://shethoughtit.ilcml.com/wp-content/uploads/2018/01/radia-perlman-blog-da-engenharia-3.jpg" style= "height:250px; width:500px">
+          <div class="text">Radia Perlman</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="https://news.yale.edu/sites/default/files/styles/opengraph_image/public/d6_files/YaleNews_hopper-grace.UNIVAC.102635875-CC_0.jpg?itok=6T3ge0pF" style= "height:250px; width:500px">
+          <div class="text">Grace Hopper</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <!-- JavaScript to make slideshow interactive with buttons and arrows -->
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if(n > slides.length) {
+            slideIndex = 1
+          }
+          if(n < 1) {
+            slideIndex = slides.length
+          }
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for(i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+        // Adds automatic carousel to the photos:
+        window.addEventListener("load",function() {
+      showSlides(slideIndex);
+      myTimer = setInterval(function(){plusSlides(1)}, 8000);
+        })
+      </script>
+    </section>
+  </div>
+  </div>
+
+<div class="Quiz"><a href="/Users/ellenfagan/Desktop/Group project repository folder/Group-Project-index/ Group project content folder/Female Quiz.html"><h1>Take a Quiz!!!</h1></a></div>
+<div class="push"></div>
+  </div>
+  <footer style="max-width:none;">
+  <div class="footer">
+    <p class="CodeFirst"> Code First Girls <br> Group Project </p>
+    <h4>Leave a Comment</h4>
+<div class="contact-title"style="max-width:none;">
+  <form action="action_page.php" target="_blank" name="myForm" onsubmit="alert",(Message sent!); method="post">
+    <label for="name"> Name </label>
+    <input type="text" id="name" name="yourname" placeholder="Your name..">
+​
+    <label for="subject"> Comment</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px">
+      </textarea>
+      <button onclick="myControl()"> Submit </button>
+​
+</form>
+<style>
+    p.c{
+        white-space: pre;
+    }
+    </style>
+</footer>
+</body>
